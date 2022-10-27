@@ -1,0 +1,19 @@
+.spinner-section {
+  display: flex;
+}
+
+.spinner-button {
+  display: flex;
+  flex-direction: column;
+}
+
+.pending-upload {
+  background-color: yellow;
+}
+
+.hiddenSpinner {
+  visibility: hidden;
+}
+.hiddenSpinner:hover {
+  visibility: visible;
+}

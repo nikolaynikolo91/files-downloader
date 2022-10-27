@@ -1,0 +1,16 @@
+<p [ngClass]="{ 'pending-upload': showSpinner }">spiner works!</p>
+<button (click)="onSpinnerStart()">start</button>
+<div
+  (mouseover)="onMouseEnter()"
+  (mouseleave)="mouseLeave()"
+  style="position: relative"
+>
+  <mat-spinner *ngIf="showSpinner"></mat-spinner>
+  <button
+    *ngIf="showSpinner && cancelSpinner"
+    style="position: absolute; position: absolute; top: 38px; left: 38px"
+    (click)="onSpinnerStrop()"
+  >
+    x
+  </button>
+</div>

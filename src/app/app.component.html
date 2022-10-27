@@ -1,11 +1,16 @@
-<div class="text-center">
-  <input class="form-control" type="file" (change)="onChange($event)" />
-  <br />
-</div>
+<div style="min-height: 600px; background-color: rgba(192, 192, 192, 0.149)">
+  <div class="text-center">
+    <input class="form-control" type="file" (change)="onChange($event)" />
+    <br />
+  </div>
 
-<hr />
-<div *ngFor="let item of list">
-  <a [href]="sanitize(item.href)" [download]="item.file.name">
-    {{ item.file.name }}</a
-  >
+  <hr />
+  <div *ngFor="let item of list">
+    <a [href]="sanitize(item.href)" [download]="item.file.name">
+      {{ item.file.name }}</a
+    >
+  </div>
 </div>
+<hr />
+
+<app-spiner></app-spiner>
